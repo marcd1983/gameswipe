@@ -1,0 +1,226 @@
+body{
+    font-family:;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 800;
+}
+h1{
+  color:#0050a8;
+}
+img {
+    display: block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.site-wrapper{
+    overflow: hidden;
+}
+.box-shadow{
+  position: relative;
+  z-index: 2;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
+}
+.logo-bg{
+    background:#ff1d25;
+}
+.main-logo{
+    margin: 8px auto;
+}
+
+.hamburger{
+  margin: 12px 18px;
+}
+
+.hamburger .line{
+  width: 50px;
+  height: 5px;
+  background-color: #fff;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+
+#hamburger-3.is-active .line:nth-child(1),
+#hamburger-3.is-active .line:nth-child(3){
+  width: 40px;
+}
+
+#hamburger-3.is-active .line:nth-child(1){
+  -webkit-transform: translateX(-10px) rotate(-45deg);
+  -ms-transform: translateX(-10px) rotate(-45deg);
+  -o-transform: translateX(-10px) rotate(-45deg);
+  transform: translateX(-10px) rotate(-45deg);
+}
+
+#hamburger-3.is-active .line:nth-child(3){
+  -webkit-transform: translateX(-10px) rotate(45deg);
+  -ms-transform: translateX(-10px) rotate(45deg);
+  -o-transform: translateX(-10px) rotate(45deg);
+  transform: translateX(-10px) rotate(45deg);
+}
+
+
+.content-pad{
+  padding: 60px 0;
+}
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -2;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 0px;
+  width: 100%;
+  top: 80%;
+  max-width:400px;
+  background: #777;
+  box-shadow: 0px 20px 20px 10px #777;
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  transform: rotate(3deg);
+  right: 0px;
+  left: auto;
+}
+#FeaturesSection{
+	padding: 10px 0 0 0;
+    width: 100%;
+    background: #eee;
+}
+/* Grid Effects */
+.grid {
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 2000px;
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+}
+.grid [class*="block-grid-"] > li {
+    padding: 0 0 5px 0;
+}
+.highlight {
+    margin:auto;
+}
+.highlight .cardButton {
+    display: inline-block;
+    color: #fff;
+    background: #0050a8;
+    border:1px solid silver;
+    width: 98%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;  
+}
+.highlight .cardButton img{
+    padding-top: 8%;
+    padding-bottom:6px;
+    margin: auto;
+}
+.highlight .cardButton h2{
+    font-size: 32px;
+    font-weight: 800;
+    margin: auto;
+    text-transform: uppercase;
+}
+.highlight .cardButton span{
+    color:gold;
+    font-size: 16px;
+    font-weight: 600;
+    margin: auto;
+}
+.highlight .cardButton:hover {
+    display: inline-block;
+    color: #fff;
+    background: #0071bb;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 5px 10px -2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 2px 5px 10px -2px rgba(0,0,0,0.2);
+    box-shadow: 2px 5px 10px -2px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+}
+.highlight .cardButton:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -200px;
+    height: 450px;
+    width: 100px;
+    background: rgba(255, 255, 255, .5);
+    transform: rotate(20deg);
+}
+.highlight .cardButton:hover:before {
+    left: 700px;
+    transition: all 0.3s;
+}
+#Footer{
+  background-image: url("../images/game-bg.png");  
+}
+
+.subscription-form {
+  color: #333;
+  padding: 1rem;
+}
+.subscription-form h4{
+  color:#0050a8;
+}
+.subscription-form .button {
+  margin-bottom: 0;
+  border-radius: 0 0 0 0;
+}
+.Copyright{
+    background:#333;
+    color:gray;
+    padding:12px;
+    font-size: 14px;
+}
+.Copyright p{
+    background:#333;
+    margin-bottom: 0;
+}
+.Copyright a{
+    color:silver;
+}
+
+/* Media Queries*/
+
+@media print, screen and (min-width: 64em) {
+  
+
+  }
+
+@media print, screen and (min-width: 40em) {
+  .main-logo{
+    margin:18px;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .main-logo{
+    margin:18px;
+  }
+  
+  }
+
+

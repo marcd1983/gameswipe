@@ -1,0 +1,179 @@
+#cards {
+    padding: 10px 0 0 0;
+    width: 100%;
+    background: -webkit-linear-gradient(-45deg, #f7f7f7 0%,#eeeeee 25%,#f7f7f7 54%,#eeeeee 85%,#ffffff 100%);
+    background: linear-gradient(135deg, #f7f7f7 0%,#eeeeee 25%,#f7f7f7 54%,#eeeeee 85%,#ffffff 100%);
+}
+
+/* Grid Effects */
+
+.grid {
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 2000px;
+    list-style: none;
+    text-align: center;
+}
+.grid [class*="block-grid-"] > li {
+    padding: 0 0 5px 0;
+}
+
+/* Common style */
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 0;
+    max-width: 492px;
+    max-height: 240px;
+    width: 98.5%;
+    height: auto;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.grid figure figcaption {
+    padding: 2.5em;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid figure h2 {
+    font-size:24px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.grid figure h2 span {
+    font-weight: bold;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+
+
+
+.highlight {
+    margin:auto;
+}
+
+.highlight .cardButton {
+    display: inline-block;
+    color: #333;
+    background: #ffd100;
+    width: 98%;
+    height: 238px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.highlight .cardButton img{
+    padding-top: 8%;
+    padding-bottom:6px;
+    margin: 0;
+}
+
+.highlight .cardButton h2{
+    font-size: 32px;
+    font-weight: 800;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.highlight .cardButton:hover {
+    display: inline-block;
+    color: #333;
+    background: gold;
+    width: 100%;
+    height: 250px
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 5px 10px -2px rgba(0,0,0,0.2);
+-moz-box-shadow: 2px 5px 10px -2px rgba(0,0,0,0.2);
+box-shadow: 2px 5px 10px -2px rgba(0,0,0,0.2);
+    transition: all 0.1s;
+}
+
+.highlight .cardButton:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -200px;
+    height: 300px;
+    width: 150px;
+    background: rgba(255, 255, 255, .5);
+    transform: rotate(20deg);
+
+}
+
+.highlight .cardButton:hover:before {
+    left: 530px;
+    transition: all 0.3s;
+}
+
+
+
+
+
+<div id="cards" >
+	<div class="grid" style="padding:0px !important">
+		<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
+			<li>
+                <div class="highlight">
+                    <a class="cardButton" href="#" alt="" title="">
+                        <img src="">
+                        <h2></h2>
+                        <p></p>
+					</a>			
+				</div>
+			</li>		
+		</ul>								
+	</div>	
+</div>
